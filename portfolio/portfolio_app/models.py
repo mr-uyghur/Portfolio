@@ -4,3 +4,16 @@ from django.db import models
 class Job(models.Model):
     image = models.ImageField(upload_to = 'images/')
     summary = models.CharField(max_length = 255)
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+
+# create a Blog model here.
+# properties: title, created at, description, image
+class Blog(models.Model):
+    title = models.CharField(max_length = 255)
+    description = models.TextField(max_length=255)
+    image = models.ImageField(upload_to = 'images/')
+    pub_date = models.DateTimeField()
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+

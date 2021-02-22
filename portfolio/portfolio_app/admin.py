@@ -7,3 +7,4 @@ from .models import *
 
 #code for showing model in the admin page as super user
 admin.site.register(Job)
+admin.site.register(Blog)
