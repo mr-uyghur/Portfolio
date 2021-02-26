@@ -17,3 +17,9 @@ class Blog(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 
+    def summary(self):
+        return self.description[:100]
+
+    def pub_date_pretty(self):
+        return self.pub_date.strftime('%b %e %Y')
+
