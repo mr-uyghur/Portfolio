@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    {% load staticfiles %}
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
@@ -28,9 +29,9 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav ml-auto">
-                        <a class="nav-item nav-link" aria-current="page" href="#">linkedIn</a>
-                        <a class="nav-item nav-link" href="#">Resume</a>
-                        <a class="nav-item nav-link" href="#">Github</a>
+                        <a class="nav-item nav-link" aria-current="page" href="https://www.linkedin.com/in/alimran-halmamat-4370361b4/">linkedIn</a>
+                        <a class="nav-item nav-link" href="{% static 'resume.pdf' %}">Resume</a>
+                        <a class="nav-item nav-link" href="https://github.com/mr-uyghur">Github</a>
                         <a class="nav-item nav-link" href="#">Blog</a>
                     </div>
                 </div>
@@ -41,8 +42,9 @@
     </header>
 
     <main>
-
+        
         <section class="py-5 text-center container">
+            <img  src = "{% static 'A4.jpg' %}" height="300" />
             <div class="row py-lg-5">
                 <div class="col-lg-6 col-md-8 mx-auto">
                     <h1 class="fw-light">Hi, I'm Ali.</h1>
@@ -51,6 +53,7 @@
                     <p>
                         <a href="mailto:mr.uyghur1996@gmail.com" class="btn btn-primary my-2">Hire me</a>
                     </p>
+                    
                 </div>
             </div>
         </section>
