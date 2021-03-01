@@ -44,7 +44,7 @@
     <main>
         
         <section class="py-5 text-center container">
-            <img src = "{% static 'A4.jpg' %}" height="300"/>
+            <img src = "{% static 'A4.jpg' %}" height="300" style="border-radius: 100%"/>
             <div class="row py-lg-5">
                 <div class="col-lg-6 col-md-8 mx-auto">
                     <h1 class="fw-light">Hi, I'm Ali.</h1>
@@ -62,15 +62,31 @@
             <div class="container">
 
                 <center>
-                    <div class="col">
-                        {%  for job in jobs.all %}
-                        <div class="col-md-4">
-                            <div class="card mb-4 box-shadow">
+                    <div class="col" >
+                        {%  for job in jobs.all %} 
+                        <h3 class="card-text pr-7 ">{{job.title}}</h3>
+                        <div class="col-md-4" >
+                            <div class="card mb-4 box-shadow" style="width: 600px">
                                 <img class="card-img-top"
                                     src="{{job.image.url}}"
-                                    alt="Card image cap">
+                                    alt="Card image cap"
+                                    
+                                    >
+                                    <br>
+                                    {% if job.image_2 %}
+                                    <img class=" hidden"
+                                    src="{{job.image_2.url}}"
+                                    alt="Card image cap"
+                                    >
+                                    {% endif %}
+                                    {% if job.image_3 %}
+                                    <img class=" hidden"
+                                    src="{{job.image_3.url}}"
+                                    alt="Card image cap"
+                                    >
+                                    {% endif %}
                                 <div class="card-body">
-                                    <p class="card-text">{{job.summary}}</p>
+                                    <p class="card-text">{{job.description}}</p>
                                 </div>
                             </div>
                         </div>
