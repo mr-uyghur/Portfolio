@@ -29,10 +29,11 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav ml-auto">
-                        <a class="nav-item nav-link" aria-current="page" href="https://www.linkedin.com/in/alimran-halmamat-4370361b4/">linkedIn</a>
+                        <a class="nav-item nav-link" aria-current="page"
+                            href="https://www.linkedin.com/in/alimran-halmamat-4370361b4/">linkedIn</a>
                         <a class="nav-item nav-link" href="{% static 'resume.pdf' %}">Resume</a>
                         <a class="nav-item nav-link" href="https://github.com/mr-uyghur">Github</a>
-                        
+
                     </div>
                 </div>
             </div>
@@ -42,9 +43,9 @@
     </header>
 
     <main>
-        
+
         <section class="py-5 text-center container">
-            <img src = "{% static 'A4.jpg' %}" height="300" style="border-radius: 100%"/>
+            <img src="{% static 'A4.jpg' %}" height="300" style="border-radius: 100%" />
             <div class="row py-lg-5">
                 <div class="col-lg-6 col-md-8 mx-auto">
                     <h1 class="fw-light">Hi, I'm Ali.</h1>
@@ -53,49 +54,49 @@
                     <p>
                         <a href="mailto:mr.uyghur1996@gmail.com" class="btn btn-primary my-2">Hire me</a>
                     </p>
-                    
+
                 </div>
             </div>
         </section>
+
+        <!-- add my technologies below -->
+        <!-- <img src="..." alt="..." class="rounded">
+        <img src="..." alt="..." class="rounded-top">
+        <img src="..." alt="..." class="rounded-right">
+        <img src="..." alt="..." class="rounded-bottom">
+        <img src="..." alt="..." class="rounded-left">
+        <img src="..." alt="..." class="rounded-circle">
+        <img src="..." alt="..." class="rounded-0"> -->
 
         <div class="album py-5 bg-light">
             <div class="container">
 
                 <center>
-                    <div class="col" >
-                        {%  for job in jobs.all %} 
+                    <div class="col">
+                        {% for job in jobs.all %}
                         <h3 class="card-text pr-7 ">{{job.title}}</h3>
-                        <div class="col-md-4" >
+                        <div class="col-md-4">
                             <div class="card mb-4 box-shadow" style="width: 600px">
-                                <img class="card-img-top"
-                                    src="{{job.image.url}}"
-                                    alt="Card image cap"
-                                    
-                                    >
-                                    <br>
-                                    {% if job.image_2 %}
-                                    <img class=" hidden"
-                                    src="{{job.image_2.url}}"
-                                    alt="Card image cap"
-                                    >
-                                    {% endif %}
-                                    {% if job.image_3 %}
-                                    <img class=" hidden"
-                                    src="{{job.image_3.url}}"
-                                    alt="Card image cap"
-                                    >
-                                    {% endif %}
+                                <img class="card-img-top" src="{{job.image.url}}" alt="Card image cap">
+                                <br>
+                                {% if job.image_2 %}
+                                <img class=" hidden" src="{{job.image_2.url}}" alt="Card image cap">
+                                {% endif %}
+                                <br>
+                                {% if job.image_3 %}
+                                <img class=" hidden" src="{{job.image_3.url}}" alt="Card image cap">
+                                {% endif %}
                                 <div class="card-body">
                                     <p class="card-text">{{job.description}}</p>
                                 </div>
                             </div>
                         </div>
                         {% endfor %}
-                        </center>
-                    </div>
-                </div>
+                </center>
             </div>
-        
+        </div>
+        </div>
+
 
 
     </main>
