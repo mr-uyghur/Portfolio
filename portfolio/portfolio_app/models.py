@@ -6,7 +6,8 @@ class Job(models.Model):
     image_2 = models.ImageField(upload_to = 'images/',blank = True)
     image_3 = models.ImageField(upload_to = 'images/',blank = True)
     title = models.CharField(max_length = 255)
-    description = models.TextField(max_length=255)
+    urls = models.CharField(max_length = 255)
+    description = models.TextField(max_length=500)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 

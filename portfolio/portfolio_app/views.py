@@ -24,3 +24,5 @@ def detail(request, blog_id):
         'blog':detail_blog
     }
     return render(request, "detail.html",context)
+    
+
