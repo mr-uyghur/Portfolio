@@ -11,6 +11,9 @@ class Job(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 
+    def create_date_pretty(self):
+        return self.created_at.strftime('%b %e %Y')
+
 # create a Blog model here.
 # properties: title, created at, description, image
 class Blog(models.Model):

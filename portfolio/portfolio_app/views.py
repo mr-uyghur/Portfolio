@@ -11,18 +11,20 @@ def home(request):
     }
     return render(request, "home.html",context)
 
-def allblogs(request):
-    blogs = Blog.objects
-    context = {
-        'blogs':blogs
-    }
-    return render(request,"allblogs.html",context)
 
-def detail(request, blog_id):
-    detail_blog = get_object_or_404(Blog, pk = blog_id) #pk = primary key
+
+
+def test(request):
+    return render(request,'test/index.html')
+
+def projects(request):
+    jobs = Job.objects
     context = {
-        'blog':detail_blog
+        'jobs': jobs
     }
-    return render(request, "detail.html",context)
+    return render(request, 'test/works.html',context)
+
+def about(request):
+    return render(request,'test/about.html')
     
 

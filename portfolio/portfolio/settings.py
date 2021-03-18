@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/2.2/ref/settings/
 """
 
 import os
+import dj_database_url
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -25,6 +26,7 @@ SECRET_KEY = 'xtdwthv0+u@45jyx2c$686=czk3j+26foou*&n#90qou+rd)&q'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+# ALLOWED_HOSTS = ['serene-ocean-94546.herokuapp.com','alihalmamat.com', 'www.alihalmamat.com']
 ALLOWED_HOSTS = []
 
 
@@ -48,6 +50,8 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    # 'whitenoise.middleware.WhitenoiseMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
 ROOT_URLCONF = 'portfolio.urls'
@@ -87,10 +91,15 @@ DATABASES = {
         'NAME': 'portfolio_db',
         'USER': 'postgres',
         'PASSWORD': 'root',
-        'HOST': '127.0.0.1',
+        'HOST': 'localhost',
         'PORT': '5432',
     }
 }
+
+# DATABASES ={
+#     'default':dj_database_url.config(default='postgres://postgres:root@localhost/portfolio_db')
+# }
+
 
 
 # Password validation
@@ -129,13 +138,15 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
+
+
+
+STATIC_URL = '/static/'
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'static') 
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'portfolio/static/') 
 ]
-
-STATIC_ROOT = os.path.join(BASE_DIR, 'static') 
-STATIC_URL = '/static/'
-
 
 
 
@@ -143,3 +154,6 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media') #media folder base directory
 
 #When someone is accessing the image
 MEDIA_URL = '/media/'
+
+# whitenoise settings 
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'

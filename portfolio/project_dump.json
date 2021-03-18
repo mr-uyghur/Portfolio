@@ -1,0 +1,497 @@
+[
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$150000$GkujEli7KdBg$A4eaLQ4dEyZ0BLzEQ1olckZ0ce/w1pr0q8NAcSYRzSo=",
+        "last_login": "2021-02-26T01:07:51.437Z",
+        "is_superuser": true,
+        "username": "alimran",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2021-02-22T02:09:27.736Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "egqbt19djyy6p3qweq7fm82fl57zliab",
+    "fields": {
+        "session_data": "MWM2MDk5NTViZmE3ZWQ2NzE3ZDg1NzhmMGNjZGNhYTczNzVhMDVhOTp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiJjOGQ0NWI3OGJiNDI1ZGQ1ZjQ4MmIzOGUyOWQyZmFhZjkzNDllZjM4In0=",
+        "expire_date": "2021-03-08T02:09:53.590Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "nwea58529lv0xxq556s53aurh4cd7mht",
+    "fields": {
+        "session_data": "MWM2MDk5NTViZmE3ZWQ2NzE3ZDg1NzhmMGNjZGNhYTczNzVhMDVhOTp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiJjOGQ0NWI3OGJiNDI1ZGQ1ZjQ4MmIzOGUyOWQyZmFhZjkzNDllZjM4In0=",
+        "expire_date": "2021-03-12T01:07:51.439Z"
+    }
+},
+{
+    "model": "portfolio_app.job",
+    "pk": 1,
+    "fields": {
+        "image": "images/test2.gif",
+        "image_2": "images/test3.gif",
+        "image_3": "images/test4.gif",
+        "title": "Carzone project, an eCommerce website",
+        "urls": "https://fathomless-earth-74343.herokuapp.com/",
+        "description": "Features: a full-stack dynamic dealership website. allows users to sign up with their social media accounts. visuals enhance by jQuery and bootstrap for a satisfying user experience.\r\n\r\n\r\nTechnologies: Django, PostgresDB, HTML, CSS, JavsScripts, Bootstrap, jQuery, goodgle/facebook devepolers tool, Bcrypt.",
+        "created_at": "2021-02-22T02:27:09.148Z",
+        "updated_at": "2021-03-02T21:50:10.783Z"
+    }
+},
+{
+    "model": "portfolio_app.job",
+    "pk": 3,
+    "fields": {
+        "image": "images/insta.gif",
+        "image_2": "images/insta_2.gif",
+        "image_3": "images/insta_3.gif",
+        "title": "Instagram Clone",
+        "urls": "https://insta-clone7777.herokuapp.com/",
+        "description": "Full Stack dynamic Instagram clone, developed with M.E.R.N stack.\r\nWith critical thinking skills, implemented real-time response update features.\r\nFeatures: Profile update, uploading image post, like/unlike a post, follow/unfollow users, comment/delete comment on posts.\r\nTechnologies: MogoDB, Express, React, Node.js, Materialized CSS, HTML,Bcrypt.",
+        "created_at": "2021-03-01T02:35:46.327Z",
+        "updated_at": "2021-03-03T00:00:08.532Z"
+    }
+},
+{
+    "model": "portfolio_app.job",
+    "pk": 4,
+    "fields": {
+        "image": "images/trip_1.gif",
+        "image_2": "images/trip_2.gif",
+        "image_3": "images/trip_3.gif",
+        "title": "Plan your Trip",
+        "urls": "https://rocky-harbor-17161.herokuapp.com/",
+        "description": "Django based full-stack application that effectively helps users organize their travel plans.\r\nUtilized Bcryt and PostgresDB for user password and data security.\r\nAchieved outstanding visuals with Bootstrap.\r\nTechnologies: Django, BootStrap, HTML,CSS,Bcrypt,PostgresDB.",
+        "created_at": "2021-03-02T05:08:15.037Z",
+        "updated_at": "2021-03-03T00:01:37.251Z"
+    }
+},
+{
+    "model": "portfolio_app.blog",
+    "pk": 1,
+    "fields": {
+        "title": "demo",
+        "description": "testing blog model",
+        "image": "images/2560x1440_Neon_hLkwZRZ.jpg",
+        "pub_date": "2021-02-22T02:26:57Z",
+        "created_at": "2021-02-22T02:26:59.047Z",
+        "updated_at": "2021-02-22T02:26:59.047Z"
+    }
+},
+{
+    "model": "portfolio_app.blog",
+    "pk": 2,
+    "fields": {
+        "title": "second blog",
+        "description": "demo",
+        "image": "images/ROG_wallpaper_Neon-Nightfall_2560x1440.jpg",
+        "pub_date": "2021-02-26T01:50:07Z",
+        "created_at": "2021-02-26T01:50:10.268Z",
+        "updated_at": "2021-02-26T01:50:10.268Z"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+        "action_time": "2021-02-22T02:26:59.049Z",
+        "user": [
+            "alimran"
+        ],
+        "content_type": [
+            "portfolio_app",
+            "blog"
+        ],
+        "object_id": "1",
+        "object_repr": "Blog object (1)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+        "action_time": "2021-02-22T02:27:09.149Z",
+        "user": [
+            "alimran"
+        ],
+        "content_type": [
+            "portfolio_app",
+            "job"
+        ],
+        "object_id": "1",
+        "object_repr": "Job object (1)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+        "action_time": "2021-02-26T01:08:14.582Z",
+        "user": [
+            "alimran"
+        ],
+        "content_type": [
+            "portfolio_app",
+            "job"
+        ],
+        "object_id": "2",
+        "object_repr": "Job object (2)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 4,
+    "fields": {
+        "action_time": "2021-02-26T01:50:10.269Z",
+        "user": [
+            "alimran"
+        ],
+        "content_type": [
+            "portfolio_app",
+            "blog"
+        ],
+        "object_id": "2",
+        "object_repr": "Blog object (2)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 5,
+    "fields": {
+        "action_time": "2021-02-28T07:39:40.535Z",
+        "user": [
+            "alimran"
+        ],
+        "content_type": [
+            "portfolio_app",
+            "job"
+        ],
+        "object_id": "1",
+        "object_repr": "Job object (1)",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"image\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 6,
+    "fields": {
+        "action_time": "2021-03-01T01:39:22.424Z",
+        "user": [
+            "alimran"
+        ],
+        "content_type": [
+            "portfolio_app",
+            "job"
+        ],
+        "object_id": "1",
+        "object_repr": "Job object (1)",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"image_2\", \"image_3\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 7,
+    "fields": {
+        "action_time": "2021-03-01T01:39:57.309Z",
+        "user": [
+            "alimran"
+        ],
+        "content_type": [
+            "portfolio_app",
+            "job"
+        ],
+        "object_id": "2",
+        "object_repr": "Job object (2)",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"image_2\", \"image_3\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 8,
+    "fields": {
+        "action_time": "2021-03-01T01:40:23.161Z",
+        "user": [
+            "alimran"
+        ],
+        "content_type": [
+            "portfolio_app",
+            "job"
+        ],
+        "object_id": "1",
+        "object_repr": "Job object (1)",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"image_2\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 9,
+    "fields": {
+        "action_time": "2021-03-01T02:23:41.773Z",
+        "user": [
+            "alimran"
+        ],
+        "content_type": [
+            "portfolio_app",
+            "job"
+        ],
+        "object_id": "1",
+        "object_repr": "Job object (1)",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"image_2\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 10,
+    "fields": {
+        "action_time": "2021-03-01T02:31:03.117Z",
+        "user": [
+            "alimran"
+        ],
+        "content_type": [
+            "portfolio_app",
+            "job"
+        ],
+        "object_id": "1",
+        "object_repr": "Job object (1)",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"image_3\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 11,
+    "fields": {
+        "action_time": "2021-03-01T02:33:44.417Z",
+        "user": [
+            "alimran"
+        ],
+        "content_type": [
+            "portfolio_app",
+            "job"
+        ],
+        "object_id": "2",
+        "object_repr": "Job object (2)",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 12,
+    "fields": {
+        "action_time": "2021-03-01T02:35:46.328Z",
+        "user": [
+            "alimran"
+        ],
+        "content_type": [
+            "portfolio_app",
+            "job"
+        ],
+        "object_id": "3",
+        "object_repr": "Job object (3)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 13,
+    "fields": {
+        "action_time": "2021-03-02T04:54:23.998Z",
+        "user": [
+            "alimran"
+        ],
+        "content_type": [
+            "portfolio_app",
+            "job"
+        ],
+        "object_id": "3",
+        "object_repr": "Job object (3)",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"image\", \"image_2\", \"image_3\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 14,
+    "fields": {
+        "action_time": "2021-03-02T05:08:15.039Z",
+        "user": [
+            "alimran"
+        ],
+        "content_type": [
+            "portfolio_app",
+            "job"
+        ],
+        "object_id": "4",
+        "object_repr": "Job object (4)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 15,
+    "fields": {
+        "action_time": "2021-03-02T21:39:23.508Z",
+        "user": [
+            "alimran"
+        ],
+        "content_type": [
+            "portfolio_app",
+            "job"
+        ],
+        "object_id": "1",
+        "object_repr": "Job object (1)",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"title\", \"description\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 16,
+    "fields": {
+        "action_time": "2021-03-02T21:39:59.362Z",
+        "user": [
+            "alimran"
+        ],
+        "content_type": [
+            "portfolio_app",
+            "job"
+        ],
+        "object_id": "1",
+        "object_repr": "Job object (1)",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"description\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 17,
+    "fields": {
+        "action_time": "2021-03-02T21:41:06.316Z",
+        "user": [
+            "alimran"
+        ],
+        "content_type": [
+            "portfolio_app",
+            "job"
+        ],
+        "object_id": "1",
+        "object_repr": "Job object (1)",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"description\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 18,
+    "fields": {
+        "action_time": "2021-03-02T21:41:22.050Z",
+        "user": [
+            "alimran"
+        ],
+        "content_type": [
+            "portfolio_app",
+            "job"
+        ],
+        "object_id": "1",
+        "object_repr": "Job object (1)",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"description\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 19,
+    "fields": {
+        "action_time": "2021-03-02T21:41:33.169Z",
+        "user": [
+            "alimran"
+        ],
+        "content_type": [
+            "portfolio_app",
+            "job"
+        ],
+        "object_id": "1",
+        "object_repr": "Job object (1)",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"description\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 20,
+    "fields": {
+        "action_time": "2021-03-02T21:50:10.784Z",
+        "user": [
+            "alimran"
+        ],
+        "content_type": [
+            "portfolio_app",
+            "job"
+        ],
+        "object_id": "1",
+        "object_repr": "Job object (1)",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"urls\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 21,
+    "fields": {
+        "action_time": "2021-03-03T00:00:08.533Z",
+        "user": [
+            "alimran"
+        ],
+        "content_type": [
+            "portfolio_app",
+            "job"
+        ],
+        "object_id": "3",
+        "object_repr": "Job object (3)",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"title\", \"urls\", \"description\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 22,
+    "fields": {
+        "action_time": "2021-03-03T00:01:37.252Z",
+        "user": [
+            "alimran"
+        ],
+        "content_type": [
+            "portfolio_app",
+            "job"
+        ],
+        "object_id": "4",
+        "object_repr": "Job object (4)",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"urls\", \"description\"]}}]"
+    }
+}
+]
